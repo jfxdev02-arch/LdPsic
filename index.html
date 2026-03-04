@@ -16,14 +16,109 @@
   <link rel="stylesheet" href="styles.css">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
+  <!-- SVG Icons Sprite (hidden) -->
+  <svg style="display: none;">
+    <symbol id="icon-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-1.54"/>
+      <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-1.54"/>
+    </symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <line x1="2" y1="12" x2="22" y2="12"/>
+      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+    </symbol>
+    <symbol id="icon-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
+      <path d="M9 22v-4h6v4"/>
+      <path d="M8 6h.01"/>
+      <path d="M16 6h.01"/>
+      <path d="M12 6h.01"/>
+      <path d="M12 10h.01"/>
+      <path d="M12 14h.01"/>
+      <path d="M16 10h.01"/>
+      <path d="M16 14h.01"/>
+      <path d="M8 10h.01"/>
+      <path d="M8 14h.01"/>
+    </symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+    </symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+      <circle cx="12" cy="7" r="4"/>
+    </symbol>
+    <symbol id="icon-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+    </symbol>
+    <symbol id="icon-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>
+    </symbol>
+    <symbol id="icon-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+      <circle cx="12" cy="10" r="3"/>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect width="20" height="16" x="2" y="4" rx="2"/>
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <polyline points="12 6 12 12 16 14"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"/>
+    </symbol>
+    <symbol id="icon-graduation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+      <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+    </symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+      <circle cx="9" cy="7" r="4"/>
+      <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+    </symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+      <line x1="16" x2="16" y1="2" y2="6"/>
+      <line x1="8" x2="8" y1="2" y2="6"/>
+      <line x1="3" x2="21" y1="10" y2="10"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+      <rect width="4" height="12" x="2" y="9"/>
+      <circle cx="4" cy="4" r="2"/>
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="4" x2="20" y1="12" y2="12"/>
+      <line x1="4" x2="20" y1="6" y2="6"/>
+      <line x1="4" x2="20" y1="18" y2="18"/>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="5" x2="19" y1="12" y2="12"/>
+      <polyline points="12 5 19 12 12 19"/>
+    </symbol>
+  </svg>
+
   <!-- Header -->
   <header>
     <nav class="container">
       <a href="#" class="logo">
-        <span class="logo-icon">🧠</span>
+        <svg class="logo-icon"><use href="#icon-brain"/></svg>
         <span class="logo-text">LdPsic</span>
       </a>
       
@@ -36,9 +131,7 @@
       </ul>
       
       <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <svg><use href="#icon-menu"/></svg>
       </button>
     </nav>
   </header>
@@ -68,8 +161,8 @@
         </div>
       </div>
       <div class="hero-image animate-on-scroll">
-        <div class="hero-circle">
-          <span class="hero-emoji">💆‍♀️</span>
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=600&fit=crop&crop=face" alt="Psicóloga" class="hero-photo">
         </div>
       </div>
     </div>
@@ -91,7 +184,7 @@
       <div class="sobre-content">
         <div class="sobre-image animate-on-scroll">
           <div class="sobre-img-wrapper">
-            <span class="sobre-emoji">👩‍⚕️</span>
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face" alt="Psicóloga" class="sobre-photo">
           </div>
         </div>
         
@@ -102,21 +195,27 @@
           
           <div class="sobre-info">
             <div class="info-item">
-              <span class="info-icon">🎓</span>
+              <div class="info-icon">
+                <svg><use href="#icon-graduation"/></svg>
+              </div>
               <div>
                 <strong>CRP</strong>
                 <p>Psicóloga Registrada</p>
               </div>
             </div>
             <div class="info-item">
-              <span class="info-icon">⏰</span>
+              <div class="info-icon">
+                <svg><use href="#icon-calendar"/></svg>
+              </div>
               <div>
                 <strong>+5 Anos</strong>
                 <p>de Experiência</p>
               </div>
             </div>
             <div class="info-item">
-              <span class="info-icon">👥</span>
+              <div class="info-icon">
+                <svg><use href="#icon-users"/></svg>
+              </div>
               <div>
                 <strong>+300</strong>
                 <p>Pacientes Atendidos</p>
@@ -139,37 +238,49 @@
       
       <div class="servicos-grid">
         <div class="servico-card animate-on-scroll">
-          <div class="servico-icon">🌐</div>
+          <div class="servico-icon">
+            <svg><use href="#icon-globe"/></svg>
+          </div>
           <h3>Terapia Online</h3>
           <p>Atendimento por videoconferência com a mesma qualidade do presencial. Onde quer que você esteja.</p>
         </div>
         
         <div class="servico-card animate-on-scroll">
-          <div class="servico-icon">🏥</div>
+          <div class="servico-icon">
+            <svg><use href="#icon-building"/></svg>
+          </div>
           <h3>Terapia Presencial</h3>
           <p>Consultório acolhedor e ambiente seguro para suas sessões terapêuticas.</p>
         </div>
         
         <div class="servico-card animate-on-scroll">
-          <div class="servico-icon">💕</div>
+          <div class="servico-icon">
+            <svg><use href="#icon-heart"/></svg>
+          </div>
           <h3>Terapia de Casal</h3>
           <p>Espaço para casais trabalharem conflitos, comunicação e fortalecimento da relação.</p>
         </div>
         
         <div class="servico-card animate-on-scroll">
-          <div class="servico-icon">🧒</div>
+          <div class="servico-icon">
+            <svg><use href="#icon-user"/></svg>
+          </div>
           <h3>Atendimento Adolescente</h3>
           <p>Acolhimento especializado para adolescentes enfrentando desafios emocionais.</p>
         </div>
         
         <div class="servico-card animate-on-scroll">
-          <div class="servico-icon">😰</div>
+          <div class="servico-icon">
+            <svg><use href="#icon-zap"/></svg>
+          </div>
           <h3>Ansiedade e Estresse</h3>
           <p>Tratamento especializado para ansiedade, pânico, fobias e estresse crônico.</p>
         </div>
         
         <div class="servico-card animate-on-scroll">
-          <div class="servico-icon">😔</div>
+          <div class="servico-icon">
+            <svg><use href="#icon-cloud"/></svg>
+          </div>
           <h3>Depressão</h3>
           <p>Acompanhamento terapêutico para superação da depressão e retomada da qualidade de vida.</p>
         </div>
@@ -187,37 +298,49 @@
       
       <div class="diferenciais-grid">
         <div class="diferencial-item animate-on-scroll">
-          <span class="diferencial-icon">✓</span>
+          <span class="diferencial-icon">
+            <svg><use href="#icon-check"/></svg>
+          </span>
           <h3>Atendimento Humanizado</h3>
           <p>Cada paciente é único e merece um atendimento personalizado e acolhedor.</p>
         </div>
         
         <div class="diferencial-item animate-on-scroll">
-          <span class="diferencial-icon">✓</span>
+          <span class="diferencial-icon">
+            <svg><use href="#icon-check"/></svg>
+          </span>
           <h3>Sigilo Absoluto</h3>
           <p>Todas as informações são tratadas com total confidencialidade ética.</p>
         </div>
         
         <div class="diferencial-item animate-on-scroll">
-          <span class="diferencial-icon">✓</span>
+          <span class="diferencial-icon">
+            <svg><use href="#icon-check"/></svg>
+          </span>
           <h3>Horários Flexíveis</h3>
           <p>Agendamento adaptado à sua rotina, incluindo horários noturnos.</p>
         </div>
         
         <div class="diferencial-item animate-on-scroll">
-          <span class="diferencial-icon">✓</span>
+          <span class="diferencial-icon">
+            <svg><use href="#icon-check"/></svg>
+          </span>
           <h3>Respostas Rápidas</h3>
           <p>Retorno ágil às suas mensagens e solicitações de agendamento.</p>
         </div>
         
         <div class="diferencial-item animate-on-scroll">
-          <span class="diferencial-icon">✓</span>
+          <span class="diferencial-icon">
+            <svg><use href="#icon-check"/></svg>
+          </span>
           <h3>Ambiente Acolhedor</h3>
           <p>Espaço preparado para você se sentir seguro e confortável.</p>
         </div>
         
         <div class="diferencial-item animate-on-scroll">
-          <span class="diferencial-icon">✓</span>
+          <span class="diferencial-icon">
+            <svg><use href="#icon-check"/></svg>
+          </span>
           <h3>Abordagem Científica</h3>
           <p>Técnicas baseadas em evidências científicas comprovadas.</p>
         </div>
@@ -248,7 +371,9 @@
       <div class="contato-content">
         <div class="contato-info animate-on-scroll">
           <div class="contato-item">
-            <span class="contato-icon">📍</span>
+            <div class="contato-icon">
+              <svg><use href="#icon-map-pin"/></svg>
+            </div>
             <div>
               <h4>Endereço</h4>
               <p>Rua das Flores, 123 - Centro<br>São Paulo - SP</p>
@@ -256,7 +381,9 @@
           </div>
           
           <div class="contato-item">
-            <span class="contato-icon">📱</span>
+            <div class="contato-icon">
+              <svg><use href="#icon-phone"/></svg>
+            </div>
             <div>
               <h4>Telefone / WhatsApp</h4>
               <p>(11) 99999-9999</p>
@@ -264,7 +391,9 @@
           </div>
           
           <div class="contato-item">
-            <span class="contato-icon">✉️</span>
+            <div class="contato-icon">
+              <svg><use href="#icon-mail"/></svg>
+            </div>
             <div>
               <h4>E-mail</h4>
               <p>contato@ldpsic.com.br</p>
@@ -272,7 +401,9 @@
           </div>
           
           <div class="contato-item">
-            <span class="contato-icon">🕐</span>
+            <div class="contato-icon">
+              <svg><use href="#icon-clock"/></svg>
+            </div>
             <div>
               <h4>Horário de Atendimento</h4>
               <p>Segunda a Sexta: 8h às 20h<br>Sábado: 8h às 14h</p>
@@ -304,7 +435,7 @@
             
             <button type="submit" class="btn btn-primary btn-block">
               <span>Enviar via WhatsApp</span>
-              <span class="btn-icon">→</span>
+              <svg class="btn-icon"><use href="#icon-arrow-right"/></svg>
             </button>
           </form>
         </div>
@@ -317,7 +448,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <span class="logo-icon">🧠</span>
+          <svg class="logo-icon"><use href="#icon-brain"/></svg>
           <span class="logo-text">LdPsic</span>
           <p>Cuidando da sua saúde mental com dedicação e profissionalismo.</p>
         </div>
@@ -335,9 +466,15 @@
         <div class="footer-social">
           <h4>Redes Sociais</h4>
           <div class="social-links">
-            <a href="#" aria-label="Instagram">📷</a>
-            <a href="#" aria-label="Facebook">👤</a>
-            <a href="#" aria-label="LinkedIn">💼</a>
+            <a href="#" aria-label="Instagram" class="social-link">
+              <svg><use href="#icon-instagram"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="social-link">
+              <svg><use href="#icon-facebook"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="social-link">
+              <svg><use href="#icon-linkedin"/></svg>
+            </a>
           </div>
         </div>
       </div>
